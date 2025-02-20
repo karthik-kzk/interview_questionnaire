@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 export default function TextAreaBoxWrapper() {
   const [next, setNext] = useState(4);
 //   const [right, setRight] = useState(false);
-  let keyArray = Object.keys(data);
+
   function nextButton(ans) {
    
-    if (next < keyArray.length-1 && validateAnswer(ans)) {
+    if (next < data.length-1 && validateAnswer(ans)) {
       
       setNext(next + 1);
     //   setRight(false);  
@@ -19,19 +19,19 @@ export default function TextAreaBoxWrapper() {
   }
   function validateAnswer(ans) {
     // .replace(/\s/g,'')
-    if (ans.replace(/\s/g,'') == data[keyArray[next]].replace(/\s/g,'')) {
+    if (ans.replace(/\s/g,'') == data[next].answer.replace(/\s/g,'')) {
       return true;
     } else {
-      console.log(ans, "data", next, data[keyArray[next]]);
+      console.log(ans, "data", next, data[next].answer);
       return false;
     }
   }
   return (
     <>
       <TextAreaBox
-        ques={keyArray[next]}
+        ques={data[next].question}
         nextButton={nextButton}
-        ans={data[keyArray[next]]}
+        ans={data[next].answer}
         next={next}
       />
     </>

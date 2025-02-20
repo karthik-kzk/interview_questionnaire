@@ -1,7 +1,23 @@
+[
 {
-"1.How to create custom exception":"method signature throws exception try catch block",
-"2.Stream vs parallelStream":"order not preserved improves performance for large data " ,  
-"3.Functional interface? Predicate? Create a custom functional Interface and how to use it using lambda":"single abstract method using lambda express. single input returns boolean value",
-"4.ConcurrentHashMap":"ConcurrentHashMap<String,Integer> mp=new ConcurrentHashMap<String,Integer>();",
-"5.What concepts of JAVA 8 have you used in your project?":"stream api ,default and static in interface,optional class,method reference, concurrent hashmap,parallel stream, date time api "
+    "question": "1.How to create custom exception",
+    "answer":"method signature throws exception try catch block"
+},
+{
+    "question":  "2.Stream vs parallelStream",
+    "answer":"order not preserved improves performance for large data "
+},
+{
+    "question": "3.Functional interface? Predicate? Create a custom functional Interface and how to use it using lambda",
+    "answer": "single abstract method using lambda express. single input returns boolean value"
+},
+{
+    "question":  "4.ConcurrentHashMap",
+    "answer":"ConcurrentHashMap<String,Integer> map=new ConcurrentHashMap<String,Integer>();"
+},
+{
+    "question": "5.What concepts of JAVA 8 have you used in your project?",
+    "answer":"stream api ,default and static in interface,optional class,method reference, concurrent hashmap,parallel stream, date time api "
 }
+]
+
