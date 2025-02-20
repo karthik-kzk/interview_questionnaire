@@ -4,7 +4,7 @@ import data from "./files/questions.json";
 import { useEffect, useState } from "react";
 
 export default function TextAreaBoxWrapper() {
-  const [next, setNext] = useState(4);
+  const [next, setNext] = useState(0);
 //   const [right, setRight] = useState(false);
 
   function nextButton(ans) {
